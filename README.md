@@ -60,3 +60,10 @@ The ETL pipeline is orchestrated in Airflow using a DAG (Directed Acyclic Graph)
       connection id = nasa_api (as in etl.py),
       connection type = http,
       extra = {"api_key":"your_api_key"}
+
+### Note : If airflow UI showing page for login -
+
+username = admin ,
+password = admin
+
+You can configure it by yourself as per your choise
