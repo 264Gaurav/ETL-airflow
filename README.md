@@ -50,13 +50,13 @@ The ETL pipeline is orchestrated in Airflow using a DAG (Directed Acyclic Graph)
    setup your connection for :
 
    1. postgres
-      connection id = my_postgres_connection (as in etl.py)
-      connection type = postgres
-      Host = postgres
-      Login = postgres
+      connection id = my_postgres_connection (as in etl.py),
+      connection type = postgres,
+      Host = postgres,
+      Login = postgres,
       password = postgres
 
    2. astronomer picture of the day - (take your api_key from https://api.nasa.gov/)
-      connection id = nasa_api (as in etl.py)
-      connection type = http
+      connection id = nasa_api (as in etl.py),
+      connection type = http,
       extra = {"api_key":"your_api_key"}
