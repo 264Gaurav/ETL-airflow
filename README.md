@@ -45,13 +45,19 @@ The ETL pipeline is orchestrated in Airflow using a DAG (Directed Acyclic Graph)
 
 This project is an ETL (Extract, Transform, Load) pipeline built using Apache Airflow. The pipeline fetches APOD images/data for a from https://api.nasa.gov/ and processes it for further use.
 
+---
+
 ## postgres scenes
 
 ![POSTGRES](images/postgres.png)
 
+---
+
 ## airflow UI scenes
 
 ![ETL APOD Pipeline](images/airflow.png)
+
+---
 
 # Project setup
 
