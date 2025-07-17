@@ -47,15 +47,15 @@ This project is an ETL (Extract, Transform, Load) pipeline built using Apache Ai
 
 ---
 
-## postgres scenes
-
-![POSTGRES](images/postgres.png)
-
----
-
 ## airflow UI scenes
 
 ![ETL APOD Pipeline](images/airflow.png)
+
+---
+
+## postgres scenes
+
+![POSTGRES](images/postgres.png)
 
 ---
 
