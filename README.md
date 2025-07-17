@@ -41,6 +41,18 @@ The ETL pipeline is orchestrated in Airflow using a DAG (Directed Acyclic Graph)
    The transformed data is loaded into a Postgres table using PostgresHook.
    If the target table doesn’t exist in the Postgres database, it is created automatically as part of the DAG using a create table task.
 
+# ETL Pipeline
+
+This project is an ETL (Extract, Transform, Load) pipeline built using Apache Airflow. The pipeline fetches APOD images/data for a from https://api.nasa.gov/ and processes it for further use.
+
+## airflow UI scenes
+
+![ETL APOD Pipeline](images/airflow.png)
+
+## postgres scenes
+
+![POSTGRES](images/postgres.png)
+
 # Project setup
 
 1. clone the repository

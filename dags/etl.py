@@ -14,7 +14,7 @@ with DAG(
     catchup=False
 
 ) as dag:
-    
+
     ## step 1: Create the table if it doesnt exists
 
     @task
@@ -40,7 +40,7 @@ with DAG(
 
 
     ## Step 2: Extract the NASA API Data(APOD)-Astronomy Picture of the Day[Extract pipeline]
-    ## https://api.nasa.gov/planetary/apod?api_key=7BbRvxo8uuzas9U3ho1RwHQQCkZIZtJojRIr293q
+    ## https://api.nasa.gov/planetary/apod?api_key=H2QsUo4cKoOfQs2a1RBvRG2TlTOqnMIUfMEjSv7j
     extract_apod=SimpleHttpOperator(
         task_id='extract_apod',
         http_conn_id='nasa_api',  ## Connection ID Defined In Airflow For NASA API
@@ -50,7 +50,7 @@ with DAG(
         response_filter=lambda response:response.json(), ## Convert response to json
     )
 
-    
+
 
     ## Step 3: Transform the data(Pick the information that i need to save)
     @task
